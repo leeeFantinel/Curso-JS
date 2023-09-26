@@ -1,0 +1,19 @@
+var numero = parseInt(prompt("Digite um número: "));
+var numero2 = parseInt(prompt("Digite mais um número: "));
+var result = 0;
+
+result = numero+numero2;
+alert("Soma: " + result);
+console.log("Soma: " + result);
+result = numero - numero2;
+alert("Subtração: " + result);
+console.log("Subtração: " + result);
+result = numero / numero2;
+alert("Divisão: " + result);
+console.log("Divisão: " + result);
+result = numero * numero2;
+alert("Multiplicação: " + result);
+console.log("Multiplicação: " + result);
+
+
+

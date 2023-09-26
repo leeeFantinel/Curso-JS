@@ -1,0 +1,13 @@
+var numero = parseInt(prompt("Digite um número: "));
+var numero2 = parseInt(prompt("Digite mais um número: ")); 
+var result1 = 0;
+var resultfinal = 0;
+
+result1 = numero + numero2;
+
+numero2 = parseInt(prompt("Digite mais um número: "));
+
+resultfinal = result1 + numero2;
+
+alert(resultfinal);
+console.log(resultfinal);

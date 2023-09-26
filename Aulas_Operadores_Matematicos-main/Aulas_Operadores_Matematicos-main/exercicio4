@@ -1,0 +1,4 @@
+var numero = parseInt(prompt("Digite um número e saiba o quadrado deste: "));
+var resultado = Math.pow(numero, 2);
+alert(resultado);
+console.log(resultado);

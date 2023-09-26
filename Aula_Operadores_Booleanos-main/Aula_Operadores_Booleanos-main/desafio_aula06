@@ -1,0 +1,23 @@
+var n1 = parseInt(prompt("Digite o primeiro número"));
+var n2 = parseInt(prompt("Digite o segundo número"));
+var aux = n2;
+var maiorNumero = 0;
+
+n2 = parseInt(prompt("Digite o terceiro número"));
+
+if (n1 > n2 && n1 > aux) {
+  maiorNumero = n1;
+} else if (n2 > n1 && n2 > aux) {
+  maiorNumero = n2;
+} else {
+  maiorNumero = aux;
+}
+
+if (n1 == n2 && n1 == aux) {
+  alert("Os números digitados são iguais: " + n1);
+  console.log("Os números digitados são iguais: " + n1);
+} else {
+  alert("O maior número é: " + maiorNumero);
+  console.log("O maior número é: " + maiorNumero);
+}
+//reescrevi o código do desafio do 0, por isso está diferente do exercicio 2.

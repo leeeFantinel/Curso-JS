@@ -1,0 +1,14 @@
+var n1 = parseInt(prompt("Digite o primeiro número"));
+var n2 = parseInt(prompt("Digite o segundo número"));
+var n3 = parseInt(prompt("Digite o terceiro número"));
+
+var maior = Math.max(n1, n2, n3);
+var menor = Math.min(n1, n2, n3);
+
+if (maior == menor) {
+  alert("Os números digitados são iguais: " + maior);
+  console.log("Os números digitados são iguais: " + maior);
+} else {
+  alert("O maior número é: " + maior + "\nO menor número é: " + menor);
+  console.log("O maior número é: " + maior + "\nO menor número é: " + menor);
+}

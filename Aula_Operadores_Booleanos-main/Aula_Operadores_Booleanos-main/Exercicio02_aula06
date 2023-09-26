@@ -1,0 +1,17 @@
+var n1 = parseInt(prompt("Digite um número"));
+var n2 = parseInt(prompt("Digite um número"));
+var n3 = parseInt(prompt("Digite um número"));
+
+if(n1 > n2 && n1>n3){
+	alert("O número " + n1 + " que digitou é o maior!");
+  console.log("O número " + n1 + " que digitou é o maior!");
+}else if(n2 > n1 && n2 > n3){
+	alert("O número " + n2 + " que digitou é o maior!");
+  console.log("O número " + n2 + " que digitou é o maior!");
+}else if(n3>n2 && n3>n1){
+	alert("O número " + n3 + " que digitou é o maior!");
+  console.log("O número " + n3 + " que digitou é o maior!");
+}else{
+	alert("Os números: " + n1 + " , " + n2 + " , " + n3 + " que digitou são iguais!");
+  console.log("Os números: " + n1 + " , " + n2 + " , " + n3 + " que digitou são iguais!");
+}

@@ -1,0 +1,9 @@
+var idade = parseInt(prompt("Digite sua idade"));
+
+if(idade >= 16){
+	alert("Você já possui a idade mínima para votar.");
+	console.log("Você já possui a idade mínima para votar.");
+}else{
+	alert("Você ainda não possui a idade mínima para votar.");
+	console.log("Você ainda não possui a idade mínima para votar.");
+}

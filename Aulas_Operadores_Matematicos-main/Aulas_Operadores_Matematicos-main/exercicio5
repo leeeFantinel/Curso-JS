@@ -1,0 +1,7 @@
+var conta = 25;
+var pagamento = 50;
+var troco = 0;
+
+troco = pagamento - conta;
+alert("O troco é de R$ "+troco);
+console.log("O troco é de R$ "+troco);

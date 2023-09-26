@@ -1,0 +1,8 @@
+var login = prompt("Digite seu login");
+var senha = prompt("Digite sua senha"); 
+
+if(login == "teste" && senha == "teste" ){
+	alert("Logado!");
+}else{
+	alert("Login ou senha inválido!");
+}
