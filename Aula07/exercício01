@@ -1,0 +1,27 @@
+do {
+  var frutas = parseInt(prompt("Digite quantas maçãs gostaria de comprar"));
+  if (frutas < 0) {
+    alert("Digite um número válido!");
+  }
+} while (frutas < 0);
+var valor = 0;
+
+if (frutas <=10) {
+  valor = frutas * 0.30;
+  alert("Maçãs pedidas: " + frutas +
+    "\nValor por unidade: R$0,30 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+  //console
+  console.log("Maçãs pedidas: " + frutas +
+    "\nValor por unidade: R$0,30 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+} else {
+  valor = frutas * 0.20;
+  alert("Maçãs pedidas: " + frutas +
+    "\nValor por unidade: R$0,20 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+  //console
+  console.log("Maçãs pedidas: " + frutas +
+    "\nValor por unidade: R$0,20 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+}

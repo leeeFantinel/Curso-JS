@@ -1,0 +1,43 @@
+do{
+//entrada de dados e validação usando o DO/While;
+do{
+var saque = parseInt(prompt("Digite quanto deseja sacar:"));
+	if(saque <= 0 || saque > 2000){
+  	alert("Seu saque deve ser maior que R$0,00 e menor que R$2000,00");
+    }
+}while(saque < 0 || saque > 2000);
+
+//variáveis para cada nota;
+var nota100; 
+var nota50;
+var nota20; 
+var nota10; 
+var nota5;
+var nota2;
+var nota1;
+var valorInicial = 2000;
+
+//Gerando o resultado final, ou seja, quantas notas serão necessárias;
+nota100 = parseInt(saque / 100);
+nota50 =  parseInt(saque % 100 / 50);
+nota20 =  parseInt(saque % 100 % 50 / 20);
+nota10 = parseInt(saque % 100 % 50 % 20 / 10);
+nota5 = parseInt(saque % 100 % 50 % 20 % 10 / 5);
+nota2 = parseInt(saque % 100 % 50 % 20 % 10 % 5 / 2);
+nota1 = parseInt(saque % 100 % 50 % 20 % 10 % 5 % 2 / 1);
+
+//imprimindo o resultado do processamento na tela;
+alert("Você receberá as seguintes notas: \nNotas de R$100: " + nota100 + 
+			"\nNotas de R$50: "  + nota50 +
+      "\nNotas de R$20: " + nota20 + 
+      "\nNotas de R$10: " + nota10 + 
+       "\nNotas de R$5: " + nota5 + 
+       "\nNotas de R$2: " + nota2 + 
+       "\nNotas de R$1: " + nota1 );
+       
+var op = parseInt(prompt("Deseja usar o sistema de novo? \n1 - SIM \n0 - NÃO"));
+if(op > 0){
+	saque = valorInicial - saque;
+}
+}while(op!=0);
+
