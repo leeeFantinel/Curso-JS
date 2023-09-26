@@ -1,0 +1,12 @@
+do {
+  var nota = parseFloat(prompt("Digite a nota do aluno"));
+  if (nota < 0 || nota > 10) {
+    alert("A nota deverá ser entre 0 e 10");
+  }
+} while (nota < 0 || nota > 10);
+
+if(nota >= 7){
+	alert("O aluno foi aprovado");
+} else {
+	alert("O aluno foi reprovado");
+}

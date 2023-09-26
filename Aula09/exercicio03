@@ -1,0 +1,12 @@
+var login = "";
+var senha = "";
+
+while (login != "teste" || senha != "teste") {
+  login = prompt("Digite seu login");
+  senha = prompt("Digite sua senha");
+  if (login != "teste" || senha != "teste") {
+    alert("Login ou senha inválido, digite login ou senha novamente!");
+  } else {
+    alert("Seja bem-vindo!");
+  }
+}

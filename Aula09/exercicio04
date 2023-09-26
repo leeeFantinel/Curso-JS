@@ -1,0 +1,12 @@
+var numero01 = parseFloat(prompt("Digite um número"));
+var maiorNum = numero01;
+
+for (var i = 1; i < 5; i++) {
+  var numero = parseFloat(prompt("Digite um número"));
+  if (numero > maiorNum) {
+    maiorNum = numero;
+  }
+}
+
+alert("O maior número é: " + maiorNum);
+console.log("O maior número é: " + maiorNum);
