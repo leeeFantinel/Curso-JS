@@ -1,0 +1,27 @@
+var acum = 0;
+var resultado = " ";
+var x = [1, 2, 3, 4, 5];
+alert(x[2]);
+
+for(var i = 0; i <= 4; i++){
+	alert("Apresentando o vetor: " + x[i]);
+}
+
+for(var i = 0; i <= 4; i++){
+	acum+=x[i];
+}
+alert("A soma dos termos é: " + acum);
+
+for(var i = 0; i <= 4; i++){
+	x[2] = 8;
+  alert("Alterando o terceiro elemento: " + x[i]);
+}
+
+for(var i = 0; i <= 4; i++){
+    if(i == 4){
+    resultado = resultado +  x[i];
+    } else {
+  	resultado = resultado +  x[i] + "-";
+  }
+}
+alert("O vetor: " + resultado);

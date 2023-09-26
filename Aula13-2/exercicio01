@@ -1,0 +1,10 @@
+var x = [];
+for(var i = 0; i <=1; i++){
+	x.push(parseInt(prompt("Digite um número")));
+}
+if(x[0] > x[1]){
+	var aux = x[0];
+  x[0] = x[1];
+  x[1] = aux;
+}
+alert(x);

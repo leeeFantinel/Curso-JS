@@ -1,0 +1,34 @@
+var numeros = [];
+
+for(var i = 0; i <= 3; i ++){
+	numeros.push(parseInt(prompt("Digite um número: ")));
+}
+alert(numeros);
+
+// segundo vetor
+
+var vetor = [6,7,8,9,10];
+
+// quarto exercício
+
+var concatena = [];
+for(var i = 0; i <= 3; i++){
+	concatena.push(numeros[i]);
+}
+
+for(var i = 0; i <= vetor.length; i++){
+	concatena.push(vetor[i]);
+}
+
+for(var i = 0; i <= concatena.length; i++){
+	alert(concatena[i]);
+}
+
+
+//desafio 
+
+var string = "essa string é um vetor"; 
+
+for(var i = 0; i <= 21; i++){
+	alert(string[i]);
+}

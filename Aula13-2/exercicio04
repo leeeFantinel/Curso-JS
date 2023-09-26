@@ -1,0 +1,6 @@
+var x = parseInt(prompt("Digite um número"));
+var tabuada = [];
+for(var i = 1; i <=10; i++){
+	tabuada.push(i*x);
+}
+alert(tabuada);

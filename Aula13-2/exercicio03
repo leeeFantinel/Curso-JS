@@ -1,0 +1,7 @@
+var array = parseInt(prompt("Digite o tamanho do array"));
+var vetor = [];
+
+for(var i = 0; i < array; i++){
+	vetor.push(parseInt(Math.random()*10));
+}
+alert(vetor);
