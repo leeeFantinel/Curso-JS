@@ -1,0 +1,14 @@
+var n1 = function(a){
+	for (var i = 1; i < 5; i++) {
+  	var numero = parseInt(prompt("Digite um número"));
+ 	  if (numero < a) {
+   		a = numero;
+  	}
+	}
+  return a;
+}
+
+var numero01 = parseInt(prompt("Digite um número"));
+var menorNum = n1(numero01);
+alert("O menor número é: " + menorNum);
+console.log("O menor número é: " + menorNum);

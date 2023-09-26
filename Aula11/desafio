@@ -1,0 +1,13 @@
+var aux = " ";
+var numero;
+
+for (var i = 0; i <= 4; i++) {
+  numero = parseInt(prompt("Digite um número"));
+  if (i == 4) {
+    aux = aux + (numero - 1);
+  } else {
+		aux = aux + (numero - 1) + " - ";
+  }
+}
+alert(aux);
+console.log(aux);

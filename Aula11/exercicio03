@@ -1,0 +1,9 @@
+var acum = 0; 
+
+for (var i = 0; i < 5; i++) {
+  var numero = parseFloat(prompt("Digite um número"));
+  	acum+=numero;
+  }
+
+alert("A soma dos números é " + acum);
+console.log("A soma dos números é: " + acum);

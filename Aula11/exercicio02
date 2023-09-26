@@ -1,0 +1,11 @@
+var aux = "";
+for(var i = 20; i > 1; i--){
+	if(i %2==0){
+  	if(i == 2){
+    	aux = aux + i;
+    }else {
+  		aux = aux + i + "-";
+      }
+  }
+}
+alert(aux);

@@ -1,0 +1,12 @@
+var numero01 = parseFloat(prompt("Digite um número"));
+var menorNum = numero01;
+
+for (var i = 1; i < 5; i++) {
+  var numero = parseFloat(prompt("Digite um número"));
+  if (numero < menorNum) {
+    menorNum = numero;
+  }
+}
+
+alert("O menor número é: " + menorNum);
+console.log("O menor número é: " + menorNum);
