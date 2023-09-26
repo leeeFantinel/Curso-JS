@@ -1,0 +1,42 @@
+var parImpar = function(a){
+if(a %2==0){
+    	alert("O número é par!");
+    }else{
+    	alert("O número é ímpar!");
+    }
+}
+
+var positivoNegativo = function(a){
+	 if(a > 0){
+    	alert("O número é positivo!");
+    } else if  (a < 0){
+    	alert("O número é negativo!");
+    }else{
+    	alert("O número é zero, portanto é nulo!");
+    }
+}
+
+var menu = parseInt(prompt("Escolha entre uma das opções abaixo: " +
+														"\n1 - Ver o maior entre os números" +
+                            "\n2 - Ver se é par ou ímpar" +
+														"\n3 - Ver se é positivo ou negativo"));
+var n1 = 0;
+var n2 = 0;
+
+switch(menu){
+	case 1: 
+  	n1 = parseInt(prompt("Digite um número"));
+    n2 = parseInt(prompt("Digite um número"));
+    alert("O maior número é: " + Math.max(n1 , n2));
+  break;
+  case 2:
+  	n1 = parseInt(prompt("Digite um número"));
+   	parImpar(n1);
+  break;
+  case 3: 
+  	n1 = parseInt(prompt("Digite um número"));
+    positivoNegativo(n1);
+  break;
+  default: 
+  	alert("Você digitou uma opção inválida!");
+}

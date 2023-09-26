@@ -1,0 +1,22 @@
+var n1 = parseInt(prompt("Digite um número"));
+var n2 = parseInt(prompt("Digite um número"));
+var aux = n1;
+var cont = 0;
+
+while (n1 < n2 || n1 > n2) {
+  if (n1 < n2) {
+    n1++;
+    alert(n1);
+    cont++;
+  } else {
+    n1--;
+    alert(n1);
+    cont++;
+  }
+}
+alert("Primeiro número digitado: " + aux +
+  "\nSegundo número digitado: " + n2 +
+  "\nQuantidade de números entre eles: " + cont);
+console.log("Primeiro número digitado: " + aux +
+  "\nSegundo número digitado: " + n2 +
+  "\nQuantidade de números entre eles: " + cont);
