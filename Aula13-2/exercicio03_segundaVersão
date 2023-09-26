@@ -1,0 +1,11 @@
+var tamArray = function (a){
+	var vetor = [];
+	for(var i = 0; i < array; i++){
+		vetor.push(parseInt(Math.random()*10));
+	}
+  return vetor;
+}
+
+var array = parseInt(prompt("Digite o tamanho do array"));
+var resultArray = tamArray(array);
+alert("Array: " + resultArray);

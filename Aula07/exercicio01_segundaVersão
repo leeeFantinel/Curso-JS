@@ -1,0 +1,41 @@
+var custo1 = function(a){
+	var valor = 0;
+	if (a <=10) {
+  valor = a * 0.30;
+  alert("Maçãs pedidas: " + a +
+    "\nValor por unidade: R$0,30 " +
+    "\nValor final: R$ " +valor.toFixed(2));
+  //console
+  console.log("Maçãs pedidas: " + a +
+    "\nValor por unidade: R$0,30 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+    }
+}
+
+var custo2 = function(a){
+	if(a > 10){
+  	valor = a * 0.20;
+  alert("Maçãs pedidas: " + a +
+    "\nValor por unidade: R$0,20 " +
+    "\nValor final: R$ " +valor.toFixed(2));
+  //console
+  console.log("Maçãs pedidas: " + a +
+    "\nValor por unidade: R$0,20 " +
+    "\nValor final: R$ " + valor.toFixed(2));
+  }
+}
+
+do {
+  var frutas = parseInt(prompt("Digite quantas maçãs gostaria de comprar"));
+  if (frutas < 0) {
+    alert("Digite um número válido!");
+  }
+} while (frutas < 0);
+
+if(frutas > 10){
+	var result = custo2(frutas);
+}else{
+  result = custo1(frutas);
+}
+
+
