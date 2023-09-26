@@ -1,0 +1,20 @@
+var inverterString = function(a){
+	var palavra = "";
+  for(var i = a.length -1 ; i >= 0; i-- ){
+  	palavra += a[i];
+    }
+  return palavra;
+}
+var verificarPalindromo = function(a) {
+  var invertida = inverterString(a);
+  if(invertida == a){
+  	return "Sim";
+  }
+  	return "Não"
+}
+
+var string = prompt("Digite uma palavra e veja ela invertida");
+var stringInvertida = inverterString(string);
+alert("A palavra digitada: " + string + "\nEla invertida: " + stringInvertida);
+var palindromo = verificarPalindromo(string);
+alert("Ela é um palíndromo: " + palindromo);

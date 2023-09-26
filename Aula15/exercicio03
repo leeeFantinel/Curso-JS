@@ -1,0 +1,51 @@
+var soma = function(a, b) {
+  var adicao = a + b;
+  return adicao;
+}
+
+var subtrair = function(a, b) {
+  var menos = a - b;
+  return menos;
+}
+
+var multi = function(a, b) {
+  var vezes = a * b;
+  return vezes;
+}
+
+var dividir = function(a, b) {
+  var div = a / b;
+  return div;
+}
+do{
+var menu = parseInt(prompt("Escolha uma operação: " +
+  "\n1 - Somar" +
+  "\n2 - Subtrair" +
+  "\n3 - Multiplicar" +
+  "\n4 - Dividir"));
+    if(menu <= 0 || menu > 4){
+      alert("O número digitado é inválido, digite novamente");
+    }
+  }while(menu <=0 || menu > 4)
+
+var n1 = parseInt(prompt("Digite um número"));
+var n2 = parseInt(prompt("Digite um número"));
+var result;
+
+switch (menu) {
+  case 1:
+    result = soma(n1, n2);
+    alert("A soma é: " + result);
+    break;
+  case 2:
+    result = subtrair(n1, n2);
+    alert("A subtração dos números é: " + result);
+    break;
+  case 3:
+    result = multi(n1, n2);
+    alert("A multiplicação dos números é: " + result);
+    break;
+  	default:
+    result = dividir(n1, n2);
+    alert("A divisão dos números é: " + result);
+}

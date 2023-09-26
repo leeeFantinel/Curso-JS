@@ -1,0 +1,32 @@
+var vetores = function(a) {
+  var vetor = [];
+  for (var i = 0; i < a; i++) {
+    vetor.push(parseInt(Math.random() * 10));
+  }
+  return vetor;
+}
+
+var maiorNumero = function(b) {
+  var maior = 0;
+  for(var i = 0; i < b.length; i++){
+  	if(b[i] > maior){
+    	maior = b[i];
+    }
+  }
+  return maior;
+}
+
+var array;
+
+do {
+  array = parseInt(prompt("Digite o tamanho do array"));
+  if (array <= 0) {
+    alert("O array não pode ser vazio.");
+  }
+} while (array <= 0);
+
+var result = vetores(array);
+alert("Array: " + result);
+var maior2 = maiorNumero(result);
+
+alert("O maior número dentro do array é: " + maior2);

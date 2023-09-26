@@ -1,0 +1,12 @@
+var x = function(){
+	var numero = parseInt(prompt("Digite um número"));
+  alert(numero);
+  var numero2 = parseInt(prompt("Digite um número"));
+  alert(numero2); 
+  
+  var soma = numero + numero2;
+  alert(soma);
+} 
+
+x();
+

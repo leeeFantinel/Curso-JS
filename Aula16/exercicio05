@@ -1,0 +1,24 @@
+var array = function(a){
+	var vetor = [];
+  for(var i = 0; i < a; i++){
+  	vetor.push(parseInt(Math.random()*10));
+  }
+  return vetor;
+}
+
+var removerElemento = function(array, c){
+  var novoArray = [];
+  for(var i = 0; i < array.length; i++){
+    if(i != c){
+      novoArray.push(array[i]);
+    }
+  }
+  return novoArray;
+} 
+
+var numero = parseInt(prompt("Digite o tamanho do array desejado"));
+var result1 = array(numero);
+alert(result1);
+var retirada = parseInt(prompt("Que elemento deseja retirar do array?"));
+var elemento = removerElemento(result1, retirada);
+alert(elemento);

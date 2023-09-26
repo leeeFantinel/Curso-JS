@@ -1,0 +1,21 @@
+var array = function(a){
+	var vetor = [];
+  for(var i = 0; i < a; i++){
+  	vetor.push(parseInt(Math.random()*10));
+  }
+  return vetor;
+}
+
+var calcularMedia = function(array){
+	var soma = 0;
+  for(var i =0;i<array.length;i++){
+   soma+=array[i];
+	}
+  return parseInt(soma / array.length);
+}
+
+var numeros = parseInt(prompt("Digite o tamanho do array desejado"));
+var result = array(numeros);
+alert(result);
+var media = calcularMedia(result);
+alert("A média dos números é: " + media);

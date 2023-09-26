@@ -1,0 +1,11 @@
+var x = function(){
+  var novoArray = [];
+  for(var i = 0; i <= 2; i++){
+ 	 var array = prompt("Digite três frutas que tem na sua cozinha e veja elas em ordem alfabética");
+   novoArray.push(array);
+   novoArray.sort();
+   alert(novoArray);
+  }
+}
+
+x();

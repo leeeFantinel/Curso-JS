@@ -1,0 +1,35 @@
+var vetores = function(a) {
+  var vetor = [];
+  for (var i = 0; i < a; i++) {
+    vetor.push(parseInt(Math.random() * 10));
+  }
+  return vetor;
+}
+
+do {
+ var n1 = parseInt(prompt("Digite o tamanho do array"));
+ if (n1 <= 0) {
+    alert("O array não pode ser vazio.");
+ }
+} while (n1 <= 0);
+
+var result = vetores(n1);
+
+do {
+  var n2 = parseInt(prompt("Digite o tamanho do array"));
+  	if (n2 <= 0) {
+  	  alert("O array não pode ser vazio.");
+  }
+} while (n2 <= 0);
+
+var result2 = vetores(n2);
+
+alert("Primeiro array: " + result);
+alert("Segundo array: " + result2);
+
+// juntando os vetores 
+for (var i = 0; i < result2.length; i++) {
+  result.push(result2[i]);
+}
+
+alert("Juntando os arrays: " + result);

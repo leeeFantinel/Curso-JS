@@ -1,0 +1,12 @@
+function repetirString(palavra, a) {
+  var resultado = "";
+  for (var i = 0; i < a; i++) {
+    resultado += palavra;
+  }
+  return resultado;
+}
+
+var stringRepetida = prompt("Digite uma palavra");
+var vezes = parseInt(prompt("Quantas vezes deseja repetir a palavra?"));
+var result = repetirString(stringRepetida, vezes)
+alert(result);
