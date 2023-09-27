@@ -1,0 +1,9 @@
+var numero1 = parseInt(prompt("Digite um número"));
+var numero2 = parseInt(prompt("Digite um número"));
+var aux = numero1;
+
+numero1 = numero2;
+numero2 = aux;
+
+alert("Números: " + numero1 + " e " + numero2);
+console.log("Números: " + numero1 + " e " + numero2);

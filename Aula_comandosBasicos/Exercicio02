@@ -1,0 +1,3 @@
+var sorteio = parseInt(Math.random()*99);
+alert(sorteio);
+console.log(sorteio);
