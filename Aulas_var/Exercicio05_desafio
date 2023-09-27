@@ -1,0 +1,34 @@
+var titulo = "Hearstopper";
+
+var nome1 = "Charlie Spring";
+var idade1 = 15;
+var sexo1 = "Masculino";
+var papel1 = "Protagonista";
+
+var nome2 = "Nicholas Nelson";
+var idade2 = 16;
+var sexo2 = "Masculino";
+var papel2 = "Protagonista";
+
+var nome3 = "Tao xu";
+var idade3 = 15;
+var sexo3 = "Masculino";
+var papel3 = "Amigo do Charlie";
+
+var nome4 = "Victoria Spring";
+var idade4 = 16;
+var sexo4 = "Feminino";
+var papel4 = "Irmã do Charlie";
+
+var nome5 = "Elle Argent";
+var idade5 = 16;
+var sexo5 = "Feminino";
+var papel5 = "Namorada do Tao";
+
+alert("Série: " + titulo);
+alert("1º Personagem: " + "\n\nNome: " + nome1 + "\nIdade: " + idade1 + " anos" + "\nSexo: " + sexo1 + "\nPapel: " + papel1 + ".");
+alert("2º Personagem: " + "\n\nNome: " + nome2 + "\nIdade:  " + idade2 + " anos" + "\nSexo: "  + sexo2 + "\nPapel: " + papel2+ ".");
+alert("3º Personagem: " + "\n\nNome: " +nome3 + "\nIdade:  " + idade3 + " anos" +  "\nSexo: " + sexo3 +"\nPapel: " + papel3+ ".");
+alert("4º Personagem: " + "\n\nNome: " +nome4 + "\nIdade:  " + idade4 + " anos" + "\nSexo: " + sexo4 + "\nPapel: " + papel4+ ".");
+alert("5º Personagem: " + "\n\nNome: " + nome5 + "\nIdade:  " + idade5 + " anos" + "\nSexo: " + sexo5 + "\nPapel: " + papel5+ ".");
+

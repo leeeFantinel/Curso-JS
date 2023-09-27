@@ -1,0 +1,6 @@
+var nome = "Leticia";
+alert(nome);
+var idade = 16;
+alert(idade);
+idade = idade + 20;
+alert(idade);
